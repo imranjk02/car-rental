@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW X5 - DriveEase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+    <a href="index.html" class="logo"><i class="fa-solid fa-car-side"></i>DriveEase</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+<section class="details-page">
+<div class="details-container">
+    <a href="cars.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Cars</a>
+    <div class="car-details">
+        <div class="details-image"><img src="images/bmw-x5.jpg" alt="BMW X5"><span class="availability booked">Booked</span></div>
+        <div class="details-content"><span class="car-category">Luxury SUV</span><h1>BMW X5</h1>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <strong>4.8</strong>
+                <span>Excellent rating</span>
+            </div>
+            <p class="details-description">
+                Experience powerful performance and premium comfort with the BMW X5.
+                Built for luxury family trips and unforgettable journeys.
+            </p>
+            <div class="price-box"><strong>₹8,500</strong><span>/ day</span></div>
+            <div class="specification-grid">
+                <div class="specification"><i class="fa-solid fa-gas-pump"></i><div><span>Fuel Type</span><strong>Diesel</strong></div></div>
+                <div class="specification"><i class="fa-solid fa-users"></i><div><span>Seats</span><strong>5 Seats</strong></div></div>
+                <div class="specification"><i class="fa-solid fa-gears"></i><div><span>Transmission</span><strong>Automatic</strong></div></div>
+                <div class="specification"><i class="fa-solid fa-car"></i><div><span>Body Type</span><strong>Luxury SUV</strong></div></div>
+                <div class="specification"><i class="fa-solid fa-calendar"></i><div><span>Model Year</span><strong>2025</strong></div></div>
+                <div class="specification"><i class="fa-solid fa-gauge-high"></i><div><span>Mileage</span><strong>13 km/l</strong></div></div>
+            </div>
+            <div class="features">
+                <h2>Features</h2>
+                <div class="feature-list">
+                    <span><i class="fa-solid fa-check"></i> Air Conditioning</span>
+                    <span><i class="fa-solid fa-check"></i> Leather Seats</span>
+                    <span><i class="fa-solid fa-check"></i> Premium Audio</span>
+                    <span><i class="fa-solid fa-check"></i> GPS Navigation</span>
+                    <span><i class="fa-solid fa-check"></i> Sunroof</span>
+                    <span><i class="fa-solid fa-check"></i> Parking Sensors</span>
+                </div>
+            </div>
+            <a href="#booking" class="btn"><i class="fa-solid fa-calendar-check"></i> Book This Car</a>
+        </div>
+    </div>
+    <section class="booking-section" id="booking">
+        <div class="section-heading"><span>RESERVE YOUR RIDE</span><h2>Book This Car</h2></div>
+        <form class="booking-form" id="bookingForm">
+            <div class="form-group"><label>Full Name</label><input type="text" id="userName" placeholder="Enter your name" required></div>
+            <div class="form-group"><label>Pickup Location</label><input type="text" id="location" placeholder="Enter pickup location" required></div>
+            <div class="form-group"><label>Pickup Date</label><input type="date" id="pickupDate" required></div>
+            <div class="form-group"><label>Return Date</label><input type="date" id="returnDate" required></div>
+            <div class="form-group"><label>Email Address</label><input type="email" id="email" placeholder="Enter your email" required></div>
+            <div class="form-group"><label>Contact Number</label><input type="tel" id="phone" placeholder="Enter your phone number" required></div>
+            <div class="form-group full-width"><label>Additional Message</label><textarea id="message" rows="4" placeholder="Any special requests?"></textarea></div>
+            <div class="booking-summary"><div><span>Rental Price</span><strong>₹8,500 / day</strong></div><div><span>Booking Status</span><strong class="booked-text">Booked</strong></div></div>
+            <button type="submit" class="btn primary-btn booking-btn" disabled><i class="fa-solid fa-calendar-check"></i> Currently Unavailable</button>
+        </form>
+    </section>
+</div>
+</section>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" class="logo"><i class="fa-solid fa-car-side"></i> DriveEase</a>
+            <p>Your trusted partner for comfortable, reliable, and affordable car rentals.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fa-solid fa-envelope"></i> hello@driveease.com</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 DriveEase. All rights reserved.</p></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

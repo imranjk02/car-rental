@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveEase - Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="navbar"><a href="index.html" class="logo"><i class="fa-solid fa-car-side"></i>DriveEase</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cars.html" class="active">Cars</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+<main>
+<section class="page-hero">
+    <div>
+        <span>OUR FLEET</span>
+        <h1>Choose Your Perfect Car</h1>
+        <p>
+            Explore our collection of comfortable,
+            reliable, and well-maintained vehicles.
+        </p>
+    </div>
+</section>
+<section class="cars-section">
+    <div class="section-heading"><span>AVAILABLE VEHICLES</span><h2>Find Your Ride</h2></div>
+    <div class="car-search">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search by car name or model...">
+        </div>
+        <div class="filters">
+            <select id="brandFilter">
+                <option value="all">All Brands</option>
+                <option value="Toyota">Toyota</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+                <option value="Hyundai">Hyundai</option>
+            </select>
+            <select id="priceFilter">
+                <option value="all">Any Price</option>
+                <option value="3000">Under ₹3,000/day</option>
+                <option value="5000">Under ₹5,000/day</option>
+                <option value="8000">Under ₹8,000/day</option>
+            </select>
+            <select id="fuelFilter">
+                <option value="all">All Fuel Types</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Electric">Electric</option>
+                <option value="Hybrid">Hybrid</option>
+            </select>
+            <select id="transmissionFilter">
+                <option value="all">All Transmissions</option>
+                <option value="Automatic">Automatic</option>
+                <option value="Manual">Manual</option>
+            </select>
+            <button class="filter-btn" id="filterBtn"><i class="fa-solid fa-filter"></i>Search</button>
+        </div>
+    </div>
+    <div class="results-info"><p>Showing <span id="resultCount">8</span> cars</p></div>
+    <div class="car-grid" id="carGrid">
+        <article class="car-card" data-name="Toyota Fortuner" data-brand="Toyota" data-price="4500" data-fuel="Diesel" data-transmission="Automatic">
+            <div class="car-image"><img src="images/fortuner.jpeg" alt="Toyota Fortuner"><span class="availability available">Available</span></div>
+            <div class="car-info"><h3>Toyota Fortuner</h3><p class="car-type">SUV</p>
+                <div class="car-specs">
+                    <span><i class="fa-solid fa-gas-pump"></i>Diesel</span>
+                    <span><i class="fa-solid fa-users"></i>7 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Automatic</span>
+                </div>
+                <div class="car-bottom">
+                    <strong>₹4,500 <small>/ day</small></strong><a href="car-details.html" class="details-btn">Details</a>
+                </div>
+            </div>
+        </article>
+        <article class="car-card" data-name="BMW 3 Series" data-brand="BMW" data-price="6500" data-fuel="Petrol" data-transmission="Automatic">
+            <div class="car-image"><img src="images/bmw.avif" alt="BMW 3 Series"><span class="availability available">Available</span></div>
+            <div class="car-info"><h3>BMW 3 Series</h3><p class="car-type">Luxury Sedan</p>
+                <div class="car-specs"><span><i class="fa-solid fa-gas-pump"></i>Petrol</span>
+                    <span><i class="fa-solid fa-users"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Automatic</span>
+                </div>
+                <div class="car-bottom"><strong>₹6,500 <small>/ day</small></strong><a href="car-details-bmw.html" class="details-btn">Details</a></div>
+            </div>
+        </article>
+        <article class="car-card" data-name="Mercedes C Class" data-brand="Mercedes" data-price="7500" data-fuel="Petrol" data-transmission="Automatic">
+            <div class="car-image"><img src="images/mercedes.avif" alt="Mercedes C Class"><span class="availability available">Available</span></div>
+            <div class="car-info"><h3>Mercedes C Class</h3><p class="car-type">Luxury Sedan</p>
+                <div class="car-specs">
+                    <span><i class="fa-solid fa-gas-pump"></i>Petrol</span>
+                    <span><i class="fa-solid fa-users"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Automatic</span>
+                </div>
+                <div class="car-bottom"><strong>₹7,500 <small>/ day</small></strong><a href="car-details-mercedes.html" class="details-btn">Details</a></div>
+            </div>
+        </article>
+        <article class="car-card" data-name="Hyundai Creta" data-brand="Hyundai" data-price="2800" data-fuel="Petrol" data-transmission="Manual">
+            <div class="car-image"><img src="images/creta.avif" alt="Hyundai Creta"><span class="availability available">Available</span></div>
+            <div class="car-info"><h3>Hyundai Creta</h3><p class="car-type">SUV</p>
+                <div class="car-specs">
+                    <span><i class="fa-solid fa-gas-pump"></i>Petrol</span>
+                    <span><i class="fa-solid fa-users"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Manual</span>
+                </div>
+                <div class="car-bottom"><strong>₹2,800 <small>/ day</small></strong><a href="car-details-creta.html" class="details-btn">Details</a></div>
+            </div>
+        </article>
+        <article class="car-card" data-name="Audi A6" data-brand="Audi" data-price="7000" data-fuel="Petrol" data-transmission="Automatic">
+            <div class="car-image"><img src="images/audio.avif" alt="Audi A6"><span class="availability available">Available</span></div>
+            <div class="car-info"><h3>Audi A6</h3><p class="car-type">Luxury Sedan</p>
+                <div class="car-specs">
+                    <span><i class="fa-solid fa-gas-pump"></i>Petrol</span>
+                    <span><i class="fa-solid fa-users"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Automatic</span>
+                </div>
+                <div class="car-bottom"><strong>₹7,000 <small>/ day</small></strong><a href="car-details-audi.html" class="details-btn">Details</a></div>
+            </div>
+        </article>
+        <article class="car-card" data-name="Toyota Camry" data-brand="Toyota" data-price="5000" data-fuel="Hybrid" data-transmission="Automatic">
+            <div class="car-image"><img src="images/camry.avif" alt="Toyota Camry"><span class="availability available">Available</span></div>
+            <div class="car-info">
+                <h3>Toyota Camry</h3>
+                <p class="car-type">Hybrid Sedan</p>
+                <div class="car-specs">
+                    <span><i class="fa-solid fa-leaf"></i>Hybrid</span>
+                    <span><i class="fa-solid fa-users"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Automatic</span>
+                </div>
+                <div class="car-bottom"><strong>₹5,000 <small>/ day</small></strong><a href="car-details-camry.html" class="details-btn">Details</a></div>
+            </div>
+        </article>
+        <article class="car-card" data-name="BMW X5" data-brand="BMW" data-price="8500" data-fuel="Diesel" data-transmission="Automatic">
+            <div class="car-image"><img src="images/bmw-x5.jpg" alt="BMW X5"><span class="availability unavailable">Booked</span></div>
+            <div class="car-info"><h3>BMW X5</h3><p class="car-type">Luxury SUV</p>
+                <div class="car-specs">
+                    <span><i class="fa-solid fa-gas-pump"></i>Diesel</span>
+                    <span><i class="fa-solid fa-users"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Automatic</span>
+                </div>
+                <div class="car-bottom"><strong>₹8,500 <small>/ day</small></strong><a href="car-details-bmw-x5.html" class="details-btn">Details</a></div>
+            </div>
+        </article>
+        <article class="car-card" data-name="Mercedes GLC" data-brand="Mercedes" data-price="8000" data-fuel="Diesel" data-transmission="Automatic">
+            <div class="car-image"><img src="images/mercedes-glc.jpg" alt="Mercedes GLC"><span class="availability available">Available</span></div>
+            <div class="car-info">
+                <h3>Mercedes GLC</h3>
+                <p class="car-type">Luxury SUV</p>
+                <div class="car-specs">
+                    <span><i class="fa-solid fa-gas-pump"></i>Diesel</span>
+                    <span><i class="fa-solid fa-users"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gears"></i>Automatic</span>
+                </div>
+                <div class="car-bottom"><strong>₹8,000 <small>/ day</small></strong><a href="car-details-mercedes-glc.html" class="details-btn">Details</a></div>
+            </div>
+        </article>
+    </div>
+    <div class="no-results" id="noResults">
+        <i class="fa-solid fa-car"></i><h3>No cars found</h3><p>Try changing your search or filter options.</p>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" class="logo"><i class="fa-solid fa-car-side"></i>DriveEase</a>
+            <p>
+                Your trusted partner for comfortable,
+                reliable, and affordable car rentals.
+            </p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-phone"></i>+91 98765 43210</p>
+            <p><i class="fa-solid fa-envelope"></i>hello@driveease.com</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 DriveEase. All rights reserved.</p></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
